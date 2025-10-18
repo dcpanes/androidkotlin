@@ -1,5 +1,6 @@
 package com.example.composables
 
+import TablaElementos
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -17,6 +18,14 @@ import com.example.composables.conocimiento.Scrolling
 import androidx.compose.ui.res.painterResource
 import com.example.composables.conocimiento.AnimacionesEjemplo
 
+
+val datos = listOf(
+    listOf("id","Nombre", "Edad", "Ciudad"), // Encabezados
+    listOf("1","Ana", "25", "Madrid"),
+    listOf("2","Luis", "30", "Barcelona"),
+    listOf("3","Marta", "28", "Valencia"),
+    listOf("3","Marta", "28", "Valencia"),
+)
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +51,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.padding(innerPadding)
                 )
                 **/
-                AnimacionesEjemplo(modifier = Modifier.padding(innerPadding))
+                //AnimacionesEjemplo(modifier = Modifier.padding(innerPadding))
+                TablaElementos(elementos = datos, modifier = Modifier.padding(innerPadding))
             }
         }
     }
