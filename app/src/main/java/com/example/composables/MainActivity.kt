@@ -15,6 +15,7 @@ import com.example.composables.conocimiento.ListaElementos
 import com.example.composables.conocimiento.NavegacionPantallas
 import com.example.composables.conocimiento.Scrolling
 import androidx.compose.ui.res.painterResource
+import com.example.composables.conocimiento.AnimacionesEjemplo
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,14 +34,16 @@ class MainActivity : ComponentActivity() {
                 )
                 **/
                 //NavegacionPantallas(modifier = Modifier.padding(innerPadding))
+                /*
                 CardConImagen(
                     imagen = painterResource(id = R.drawable.ic_launcher_foreground),
                     titulo = "Título de la tarjeta",
                     descripcion = "Descripción de la tarjeta",
                     modifier = Modifier.padding(innerPadding)
                 )
+                **/
+                AnimacionesEjemplo(modifier = Modifier.padding(innerPadding))
             }
-
         }
     }
 }
