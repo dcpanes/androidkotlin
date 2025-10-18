@@ -11,6 +11,7 @@ import com.example.composables.conocimiento.CamaraCapture
 import com.example.composables.conocimiento.ColumnAndRows
 import com.example.composables.conocimiento.FormularioValidacion
 import com.example.composables.conocimiento.ListaElementos
+import com.example.composables.conocimiento.NavegacionPantallas
 import com.example.composables.conocimiento.Scrolling
 
 class MainActivity : ComponentActivity() {
@@ -24,10 +25,12 @@ class MainActivity : ComponentActivity() {
                 // Scrolling(modifier = Modifier.padding(innerPadding))
                 // FormularioValidacion(modifier = Modifier.padding(innerPadding))
                 //CamaraCapture(modifier = Modifier.padding(innerPadding))
-                ListaElementos(
+                /* ListaElementos(
                     elementos = List(100) { "Elemento #$it" },
                     modifier = Modifier.padding(innerPadding)
                 )
+                **/
+                NavegacionPantallas(modifier = Modifier.padding(innerPadding))
             }
 
         }
