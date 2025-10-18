@@ -26,10 +26,13 @@ import androidx.compose.ui.Modifier
  * - Se aplica verticalScroll con el estado creado para habilitar el desplazamiento.
  */
 @Composable
-fun Scrolling() {
+fun Scrolling(modifier: Modifier = Modifier) {
     val sScroll = rememberScrollState()
+
     Column(
-        modifier = Modifier.fillMaxSize().verticalScroll(sScroll)
+        modifier = modifier
+            .fillMaxSize()
+            .verticalScroll(sScroll)
     ) {
         for (i in 1..200) {
             Text("Item $i")

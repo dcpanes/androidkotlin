@@ -4,6 +4,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Scaffold
+import androidx.compose.ui.Modifier
 import com.example.composables.conocimiento.ColumnAndRows
 import com.example.composables.conocimiento.Scrolling
 
@@ -12,8 +15,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            // ColumnAndRows()
-            Scrolling()
+            Scaffold {
+                innerPadding ->
+                // ColumnAndRows(modifier = Modifier.padding(innerPadding)
+                Scrolling(modifier = Modifier.padding(innerPadding))
+            }
+
         }
     }
 }
