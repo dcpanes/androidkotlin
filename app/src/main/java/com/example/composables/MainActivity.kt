@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.composables.conocimiento.ColumnAndRows
+import com.example.composables.conocimiento.FormularioValidacion
 import com.example.composables.conocimiento.Scrolling
 
 class MainActivity : ComponentActivity() {
@@ -17,8 +18,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             Scaffold {
                 innerPadding ->
-                // ColumnAndRows(modifier = Modifier.padding(innerPadding)
-                Scrolling(modifier = Modifier.padding(innerPadding))
+                // ColumnAndRows(modifier = Modifier.padding(innerPadding))
+                // Scrolling(modifier = Modifier.padding(innerPadding))
+                FormularioValidacion(modifier = Modifier.padding(innerPadding))
             }
 
         }
