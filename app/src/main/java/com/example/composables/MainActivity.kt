@@ -1,5 +1,6 @@
 package com.example.composables
 
+import LocationScreen
 import TablaElementos
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -58,7 +59,8 @@ class MainActivity : ComponentActivity() {
                 // TablaElementos(elementos = datos, modifier = Modifier.padding(innerPadding))
                 // ModifiersExamples(modifier = Modifier.padding(innerPadding))
                 //StateExamples(modifier = Modifier.padding(innerPadding))
-                FormularioScreen(modifier = Modifier.padding(innerPadding))
+                //FormularioScreen(modifier = Modifier.padding(innerPadding))
+                LocationScreen(modifier = Modifier.padding(innerPadding))
             }
         }
     }
