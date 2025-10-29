@@ -19,6 +19,7 @@ import androidx.compose.ui.res.painterResource
 import com.example.composables.conocimiento.AnimacionesEjemplo
 import com.example.composables.conocimiento.ModifiersExamples
 import com.example.composables.conocimiento.StateExamples
+import com.example.composables.ui.FormularioScreen
 
 
 val datos = listOf(
@@ -56,7 +57,8 @@ class MainActivity : ComponentActivity() {
                 //AnimacionesEjemplo(modifier = Modifier.padding(innerPadding))
                 // TablaElementos(elementos = datos, modifier = Modifier.padding(innerPadding))
                 // ModifiersExamples(modifier = Modifier.padding(innerPadding))
-                StateExamples(modifier = Modifier.padding(innerPadding))
+                //StateExamples(modifier = Modifier.padding(innerPadding))
+                FormularioScreen(modifier = Modifier.padding(innerPadding))
             }
         }
     }
