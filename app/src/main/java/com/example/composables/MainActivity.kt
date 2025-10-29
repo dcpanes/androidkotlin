@@ -20,6 +20,7 @@ import androidx.compose.ui.res.painterResource
 import com.example.composables.conocimiento.AnimacionesEjemplo
 import com.example.composables.conocimiento.ModifiersExamples
 import com.example.composables.conocimiento.StateExamples
+import com.example.composables.ui.CharacterScreen
 import com.example.composables.ui.FormularioScreen
 
 
@@ -60,7 +61,8 @@ class MainActivity : ComponentActivity() {
                 // ModifiersExamples(modifier = Modifier.padding(innerPadding))
                 //StateExamples(modifier = Modifier.padding(innerPadding))
                 //FormularioScreen(modifier = Modifier.padding(innerPadding))
-                LocationScreen(modifier = Modifier.padding(innerPadding))
+                //LocationScreen(modifier = Modifier.padding(innerPadding))
+                CharacterScreen(modifier = Modifier.padding(innerPadding))
             }
         }
     }
